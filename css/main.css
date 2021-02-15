@@ -1,0 +1,78 @@
+h1{
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+header{
+    background-color: rgba(83, 80, 79, 1);                   /*Если картинка не загрузится*/
+    background: url("img/Rectangle.png") no-repeat center;
+    height: 740px;
+}
+
+.header{
+    align-items: center;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.header__body{
+    display: flex;
+    justify-content: center;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    padding: 20px;
+}
+.menu__burger{
+    width: 50px;
+    height: 50px;
+    background-color: #F7654A;
+}
+.text__presentation{
+    display: flex;
+    flex-direction: column;
+}
+.text__presentation_h1{
+    text-align: center;
+    font-size: 64px;
+    line-height: 95px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 88px;
+}
+.text__presentation_p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.block__presentation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.block__presentation_content{
+    position: center;
+    margin-top: 170px;
+    width: 1110px;
+    height: 300px;
+    background-color: #fff;
+}
+.footer{
+}
