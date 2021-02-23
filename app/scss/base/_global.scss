@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #464646;
+  font-family: $Roboto;
+  font-size: 14px;
+  width: 100%;
+
+  @include min-width(sm) {
+    font-size: 16px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.contain {
+  max-width: 1300px;
+  margin: auto;
+  padding: 20% 15px;
+
+}
+
+
+

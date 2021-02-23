@@ -1,0 +1,94 @@
+//
+//  RESPOND ABOVE
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin min-width($breakpoint) {
+
+    @if map-has-key($breakpoints, $breakpoint) {
+
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+        @media (min-width: $breakpoint-value) {
+            @content;
+        }
+
+    } @else {
+
+        @warn 'Invalid breakpoint: #{$breakpoint}.';
+    }
+}
+
+
+//
+//  RESPOND BELOW
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin max-width($breakpoint) {
+
+    @if map-has-key($breakpoints, $breakpoint) {
+
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+        @media (max-width: ($breakpoint-value - 1)) {
+            @content;
+        }
+
+    } @else {
+
+        @warn 'Invalid breakpoint: #{$breakpoint}.';
+    }
+}
+
+
+//
+//  RESPOND BETWEEN
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin respond-between($lower, $upper) {
+
+    @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+
+        $lower-breakpoint: map-get($breakpoints, $lower);
+        $upper-breakpoint: map-get($breakpoints, $upper);
+
+        @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
+            @content;
+        }
+
+    } @else {
+
+        @if (map-has-key($breakpoints, $lower) == false) {
+
+            @warn 'Your lower breakpoint was invalid: #{$lower}.';
+        }
+
+        @if (map-has-key($breakpoints, $upper) == false) {
+
+            @warn 'Your upper breakpoint was invalid: #{$upper}.';
+        }
+    }
+}
+
+//font-size
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-font-size($min-font-size, $max-font-size) {
+    $u1: unit(320px);
+    $u2: unit(1200px);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+        & {
+            font-size: $min-font-size;
+            @media (min-width: 320px) {
+                font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{320px}) / #{strip-unit(1200px - 320px)}));
+            }
+            @media (min-width: 1200px) {
+                font-size: $max-font-size;
+            }
+        }
+    }
+}
