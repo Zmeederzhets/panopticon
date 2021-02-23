@@ -1,0 +1,29 @@
+.first-screen{
+  max-width: 1150px;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+.first-screen__title {
+  padding-top: 92px;
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.first-screen__annotation {
+  padding-top: 30px;
+  padding-bottom: 114px;
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #fff;
+}

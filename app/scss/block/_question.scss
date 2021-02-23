@@ -1,0 +1,41 @@
+.question {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.question__title {
+  text-align: center;
+  padding-bottom: 50px;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.question__item {
+  font-family: Oswald, sans-serif;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #F7654A;
+}
+.question__item-text {
+  max-width: 730px;
+  padding-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+}
+.question__item:hover {
+  color: #964331;
+}
+.question__item p, .question__item [type="checkbox"]{
+  display:none;
+}
+.question__item [type="checkbox"]:checked ~ p {
+  display:block;
+}

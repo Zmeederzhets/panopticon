@@ -1,0 +1,30 @@
+.partners {
+  width: 100%;
+  height: 364px;
+  margin-top: 150px;
+  padding-bottom: 150px;
+  background: #404149;
+}
+.partners__block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.partners__block-title {
+  padding-top: 100px;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.partners__block-img {
+  padding-top: 60px;
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 64px;
+}

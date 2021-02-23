@@ -1,0 +1,54 @@
+.honor {
+  position: relative;
+  width: 1110px;
+  height: 300px;
+  margin: 0 auto;
+  z-index: 10;
+  background: #F7F7F7;
+  display: flex;
+  align-items: center;
+}
+.honor__list {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-grow:1;
+
+}
+.honor__item {
+  width: 190px;
+  height: 186px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.honor__item-number {
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 107px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F7654A;
+}
+.honor__item-text {
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.honor__item-description {
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #999999;
+}

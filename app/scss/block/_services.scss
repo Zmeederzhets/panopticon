@@ -1,0 +1,38 @@
+.services {
+  width: 1110px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.services__title {
+  padding-top: 150px;
+  grid-column: 1/4;
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.services__item {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services__item-text {
+  padding-top: 30px;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
