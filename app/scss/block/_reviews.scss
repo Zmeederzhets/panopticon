@@ -1,11 +1,10 @@
 .reviews {
-  width: 1110px;
-  padding-top: 150px;
-  padding-bottom: 100px;
+  max-width: 1150px;
+  padding: 150px 20px 100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 2.7%;
 }
 .reviews__title {
   padding-bottom: 64px;

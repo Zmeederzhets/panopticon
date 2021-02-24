@@ -1,5 +1,7 @@
 .question {
-  max-width: 1110px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   padding-top: 150px;
 }
@@ -38,4 +40,16 @@
 }
 .question__item [type="checkbox"]:checked ~ p {
   display:block;
+}
+
+@media (max-width: 1151px) {
+  .question__title {
+    font-size: calc(18px + 18 * (100vw / 1150));
+  }
+  .question__item {
+    font-size: calc(14px + 10 * (100vw / 1150));
+  }
+  .question__item-text{
+    font-size: calc(12px + 4 * (100vw / 1150));
+  }
 }

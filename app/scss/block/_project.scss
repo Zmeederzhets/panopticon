@@ -1,16 +1,13 @@
 .project {
-  width: 1110px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  max-width: 1150px;
+  padding: 100px 20px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-template-columns:  repeat(3, 1fr);
+  grid-gap: 2.7%;
 }
 .project__img {
   object-fit: cover;
-  width: 350px;
-  height: 380px;
 }
 .project__title {
   padding-bottom: 30px;
@@ -49,3 +46,10 @@
   line-height: 22px;
   color: #999999;
 }
+
+@media (max-width: 1151px) {
+  .project__title {
+    font-size: calc(18px + 18 * (100vw / 1150));
+  }
+}
+

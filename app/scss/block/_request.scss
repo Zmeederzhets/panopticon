@@ -4,7 +4,9 @@
   background: #f7654a;
 }
 .request__item{
-  max-width: 1110px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 181px;
   margin: 0 auto;
   display: flex;
@@ -51,4 +53,17 @@
 .request__button:active {
   background-color: rgba(255, 255, 255, 0.6);
   transform: translateY(6px);
+}
+
+@media (max-width: 1151px) {
+  .request__block-title {
+    font-size: calc(22px + 26 * (100vw / 1150));
+  }
+  .request__block-text {
+    font-size: calc(14px + 10 * (100vw / 1150));
+  }
+  .request__button {
+    font-size: calc(12px + 2 * (100vw / 1150));
+  }
+
 }
