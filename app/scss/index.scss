@@ -1,0 +1,22 @@
+﻿@import "variables";
+@import "mixins";
+
+//base
+@import "base/global";
+
+//block
+@import "block/header";
+@import "block/first-screen";
+@import "block/honor";
+@import "block/project";
+@import "block/request";
+@import "block/services";
+@import "block/portfolio";
+@import "block/question";
+@import "block/partners";
+@import "block/reviews";
+@import "block/contacts";
+@import "block/footer";
+@import "block/mineNormalize";
+
+
