@@ -49,3 +49,16 @@
 .reviews__item-from{
   color:  #F7654A;
 }
+
+@media (max-width: 787px) {
+  .reviews {
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+  }
+  .reviews__title {
+    grid-column: 1/2;
+  }
+
+
+}

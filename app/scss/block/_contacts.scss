@@ -48,3 +48,16 @@
 .mail {
   color: #F7654A;
 }
+
+
+@media (max-width: 1151px) {
+  .contacts__title  {
+    font-size: calc(16px + 20 * (100vw / 1150));
+  }
+  .contacts__item-text {
+    font-size: calc(10px + 14 * (100vw / 1150));
+  }
+  .contacts__item-info {
+    font-size: calc(10px + 14 * (100vw / 1150));
+  }
+}

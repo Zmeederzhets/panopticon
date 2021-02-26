@@ -6,7 +6,7 @@
   grid-template-columns:  repeat(3, 1fr);
   grid-gap: 2.7%;
 }
-.project__img {
+.project__block-img {
   object-fit: cover;
 }
 .project__title {
@@ -38,7 +38,9 @@
   display: block;
 }
 .project__block-text {
+  max-width: 350px;
   padding-top: 20px;
+  margin-bottom: 10px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -50,6 +52,15 @@
 @media (max-width: 1151px) {
   .project__title {
     font-size: calc(18px + 18 * (100vw / 1150));
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+  .project__title {
+    grid-column: 1/2;
   }
 }
 
