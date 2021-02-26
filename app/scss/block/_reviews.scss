@@ -52,13 +52,14 @@
 
 @media (max-width: 787px) {
   .reviews {
+    grid-gap: 10px;
     grid-template-columns: 1fr;
     justify-items: center;
-
   }
   .reviews__title {
     grid-column: 1/2;
   }
-
-
+  .reviews__item-name {
+    font-size: calc(14px + 7 * (100vw / 1150));
+  }
 }

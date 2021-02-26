@@ -33,20 +33,18 @@
 .request__button {
   width: 175px;
   height: 49px;
+  margin: 5px;
   font-family: Oswald, sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.05em;
   background: #ffffff;
+  padding:14px;
+  transition-duration: 0.4s;
 }
 .request__button-img {
   padding-right:15px;
   padding-top: 3px;
-}
-.request__button {
-  padding:14px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
 }
 .request__button:hover{
   background-color: rgba(255, 255, 255, 0.8);
@@ -59,15 +57,22 @@
 @media (max-width: 1151px) {
   .request__block-title {
     font-size: calc(16px + 32 * (100vw / 1150));
-    line-height: calc(20px + 51 * (100vw / 1150));
+    line-height: calc(16px + 55 * (100vw / 1150));
   }
-
   .request__block-text {
     font-size: calc(14px + 10 * (100vw / 1150));
-    line-height: calc(6px + 30 * (100vw / 1150));
+    line-height: calc(16px + 20 * (100vw / 1150));
   }
   .request__button {
-    font-size: calc(12px + 2 * (100vw / 1150));
+    width: calc(160px + 15 * (100vw / 1150));
+    padding: calc(1px + 13 * (100vw / 1150));;
   }
+}
 
+@media (max-width: 480px){
+  .request__item {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
 }

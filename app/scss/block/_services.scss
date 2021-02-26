@@ -48,3 +48,13 @@
     font-size: calc(12px + 9 * (100vw / 1150));
   }
 }
+
+@media (max-width: 787px){
+  .services {
+    grid-template-columns:  repeat(2, 1fr);
+  }
+  .services__title {
+    padding-top: 150px;
+    grid-column: 1/3;}
+
+}

@@ -58,6 +58,7 @@
 @media (max-width: 480px) {
   .project {
     grid-template-columns: 1fr;
+    grid-gap:10px;
   }
   .project__title {
     grid-column: 1/2;

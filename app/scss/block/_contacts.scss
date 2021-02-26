@@ -25,6 +25,7 @@
 .contacts__item {
   max-width: 255px;
   margin: 0 auto;
+  text-align: center;
 }
 .contacts__item-text {
   padding-top: 25px;
@@ -55,9 +56,18 @@
     font-size: calc(16px + 20 * (100vw / 1150));
   }
   .contacts__item-text {
-    font-size: calc(10px + 14 * (100vw / 1150));
+    font-size: calc(8px + 16 * (100vw / 1150));
   }
   .contacts__item-info {
-    font-size: calc(10px + 14 * (100vw / 1150));
+    font-size: calc(6px + 18 * (100vw / 1150));
   }
+}
+
+@media (max-width: 480px){
+  .contacts {
+    grid-template-columns: 1fr 1fr;
+}
+  .contacts__title {
+   grid-column: 1/3;
+}
 }
