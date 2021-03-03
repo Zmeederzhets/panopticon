@@ -1,67 +1,69 @@
 .project {
-  max-width: 1150px;
-  padding: 100px 20px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns:  repeat(3, 1fr);
-  grid-gap: 2.7%;
-}
-.project__block-img {
-  object-fit: cover;
-}
-.project__title {
-  padding-bottom: 30px;
-  font-family: Oswald, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 53px;
-  grid-column: 1/4;
-  text-align: center;
-  text-transform: uppercase;
-  color: #404149;
-}
-.project__block-title {
-  padding-top: 45px;
-  font-family: Oswald, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: #404149;}
-.project__block-title:before {
-  content: '';
-  width: 55px;
-  height: 6px;
-  margin-bottom: 15px;
-  background: #F7654A;
-  display: block;
-}
-.project__block-text {
-  max-width: 350px;
-  padding-top: 20px;
-  margin-bottom: 10px;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #999999;
-}
+  padding-top: 100px;
+  padding-bottom: 100px;
 
-@media (max-width: 1151px) {
-  .project__title {
-    font-size: calc(18px + 18 * (100vw / 1150));
+  @media (max-width: 1149px) {
+    & {
+      padding-top: calc(10px + 90 * (100vw / 1150));
+      padding-bottom: calc(10px + 90 * (100vw / 1150));
+    }
+  }
+
+  &__title {
+    padding-bottom: 30px;
+    font-family: $Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.472em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #404149;
+
+    @media (max-width: 1149px) {
+      & {
+        font-size: calc(10px + 26 * (100vw / 1150));
+      }
+    }
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    grid-gap: 2.7%;
+
+    &-img {
+      width: 100%;
+      padding-top: 30px;
+      object-fit: cover;
+    }
+
+    &-title {
+      padding-top: 45px;
+      font-family: $Oswald;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.5em;
+      color: #404149;
+
+      &:before {
+        content: '';
+        width: 55px;
+        height: 6px;
+        margin-bottom: 15px;
+        background: #F7654A;
+        display: block;
+      }
+    }
+
+    &-text {
+      padding-top: 20px;
+      font-family: $OpenSans;
+      font-size: 16px;
+      line-height: 1.375em;
+      color: #999999;
+    }
   }
 }
-
-@media (max-width: 480px) {
-  .project {
-    grid-template-columns: 1fr;
-    grid-gap:10px;
-  }
-  .project__title {
-    grid-column: 1/2;
-  }
-}
-

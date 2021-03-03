@@ -3,58 +3,57 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  padding-bottom: 150px;
-  display: grid;
-  grid-template-columns:  repeat(3, 1fr);
-  grid-gap: 2.7%;
-}
-.services__title {
-  padding-top: 150px;
-  grid-column: 1/4;
-  text-align: center;
-  font-family: Oswald, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 53px;
-  text-transform: uppercase;
-  color: #000000;
-}
-.services__item {
-  max-width: 350px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.services__item-text {
-  padding-top: 30px;
-  font-family: Oswald, sans-serif;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 31px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #000000;
+
+  &__title {
+    padding-top: 150px;
+    text-align: center;
+    font-family: $Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.472em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__item {
+    padding-top: 66px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(270px, 1fr));
+    justify-items: center;
+    grid-gap: 30px;
+
+
+    &-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #F7F7F7;
+
+      &--img {
+        padding: 59px 0 30px;
+      }
+
+      &--text {
+        padding-bottom: 30px;
+        font-family: $Oswald;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 1.476em;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #000000;
+      }
+    }
+  }
 }
 
 
 @media (max-width: 1151px) {
   .services__title {
-    font-size: calc(18px + 18 * (100vw / 1150));
+    font-size: calc(10px + 26 * (100vw / 1150));
   }
-  .services__item-text {
-    font-size: calc(12px + 9 * (100vw / 1150));
-  }
-}
-
-@media (max-width: 787px){
-  .services {
-    grid-template-columns:  repeat(2, 1fr);
-  }
-  .services__title {
-    padding-top: 150px;
-    grid-column: 1/3;}
-
 }
