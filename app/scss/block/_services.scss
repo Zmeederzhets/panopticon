@@ -15,7 +15,7 @@
     text-transform: uppercase;
     color: #000000;
 
-    @media (max-width: 1151px) {
+    @media (max-width: 1149px) {
       & {
         font-size: calc(10px + 26 * (100vw / 1150));
         padding-top: calc(20px + 130 * (100vw / 1150));
@@ -31,7 +31,7 @@
     justify-items: center;
     grid-gap: 30px;
 
-    @media (max-width: 1151px) {
+    @media (max-width: 1149px) {
       & {
         padding-top: calc(10px + 56 * (100vw / 1150));
         padding-bottom: calc(10px + 140 * (100vw / 1150));
