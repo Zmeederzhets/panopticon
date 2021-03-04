@@ -1,7 +1,6 @@
 .project {
   padding-top: 100px;
   padding-bottom: 100px;
-
   @media (max-width: 1149px) {
     & {
       padding-top: calc(10px + 90 * (100vw / 1150));
@@ -23,15 +22,22 @@
     @media (max-width: 1149px) {
       & {
         font-size: calc(10px + 26 * (100vw / 1150));
+        padding-bottom: calc(10px + 20 * (100vw / 1150));
       }
     }
   }
 
   &__block {
     display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns:  repeat(3, 1fr);
     justify-items: center;
     grid-gap: 2.7%;
+
+    @media (max-width: 576px) {
+      & {
+        grid-template-columns:  1fr;
+      }
+    }
 
     &-img {
       width: 100%;

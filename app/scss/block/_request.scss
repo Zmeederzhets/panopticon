@@ -9,6 +9,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 480px) {
+      & {
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+      }
+    }
   }
 
   &__block-title {
@@ -19,6 +27,12 @@
     line-height: 1.479em;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+
+    @media (max-width: 1149px) {
+      & {
+        font-size: calc(16px + 32 * (100vw / 1150));
+      }
+    }
   }
 
   &__block-text {
@@ -29,6 +43,12 @@
     line-height: 1.5em;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+
+    @media (max-width: 1149px) {
+      &{
+        font-size: calc(14px + 10 * (100vw / 1150));
+      }
+    }
   }
 
   &__button {
@@ -61,20 +81,5 @@
 }
 
 
-@media (max-width: 1149px) {
-  .request__block-title {
-    font-size: calc(16px + 32 * (100vw / 1150));
-  }
-  .request__block-text {
-    font-size: calc(14px + 10 * (100vw / 1150));
-  }
- }
 
 
-@media (max-width: 480px) {
-  .request__item {
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-  }
-}
