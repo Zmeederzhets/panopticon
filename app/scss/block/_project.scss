@@ -1,10 +1,11 @@
 .project {
-
+  padding-top: 100px;
+  padding-bottom: 130px;
 
   @media (max-width: 1149px) {
     & {
       padding-top: calc(10px + 90 * (100vw / 1150));
-      padding-bottom: calc(10px + 120 * (100vw / 1150));
+      padding-bottom: calc(20px + 110 * (100vw / 1150));
     }
   }
 
@@ -20,23 +21,23 @@
     color: #404149;
 
     @media (max-width: 1149px) {
-      & {
+      &{
         font-size: calc(10px + 26 * (100vw / 1150));
         padding-bottom: calc(10px + 20 * (100vw / 1150));
       }
     }
   }
 
-  &__block {  padding-top: 100px;
-    padding-bottom: 130px;
+  &__block {
     display: grid;
     grid-template-columns:  repeat(3, 1fr);
     justify-items: center;
     grid-gap: 2.7%;
 
-    @media (max-width: 576px) {
+       @media (max-width: 576px) {
       & {
         grid-template-columns:  1fr;
+        grid-gap: 0;
       }
     }
 
@@ -66,7 +67,6 @@
     }
 
     &-text {
-      height: 100%;
       padding-top: 20px;
       font-family: $OpenSans;
       font-size: 16px;
