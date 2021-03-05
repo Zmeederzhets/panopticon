@@ -9,8 +9,16 @@ module.exports = {
     ],
     devServer: {
         port: 9000,
+        host: '192.168.0.108',
         contentBase: path.join(__dirname, './app/'),
-        open: true
+        open: true,
+        proxy: {
+            '/api/**': {
+                target: '192.168.0.108:9000',
+                secure: false,
+                changeOrigin: true,
+            }
+        },
     },
     node: {
         fs: 'empty'
