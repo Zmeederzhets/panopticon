@@ -1,0 +1,38 @@
+.features{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.title{
+  font-family: $OpenSans;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #585b60;
+}
+
+.features__title{
+  padding-top: 32px;
+  font-family: $OpenSans;
+  font-size: 18px;
+  line-height: 0.75em;
+  font-weight: 400;
+  color: #585b60;
+}
+
+.features__text{
+  padding-top: 17px;
+  font-family: $OpenSans;
+  font-size: 14px;
+  line-height: 2em;
+  font-weight: 400;
+  color: #9da6ac;
+}
+.input{
+  padding-top: 36px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #00bfa5;
+}

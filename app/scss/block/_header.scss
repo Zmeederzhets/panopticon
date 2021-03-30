@@ -1,0 +1,94 @@
+.header {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  background:  url("/img/header.png") no-repeat ;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5) ;
+}
+
+.menu{
+  padding-top: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  font-family: $OpenSans;
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+
+.nav{
+  width: 32px;
+  display: block;
+  background: url("/img/menu.svg") no-repeat;
+}
+
+.nav__item{
+  display: none;
+}
+
+.caption{
+  text-align: center;
+}
+
+.caption__title{
+  max-width: 270px;
+  margin: auto;
+  padding-top: 252px;
+  font-family: $OpenSans;
+  font-size: 36px;
+  line-height: 1.333em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.caption__slogan{
+  padding-top: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: $OpenSans;
+  font-size: 16px;
+  line-height: 1.625em;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.buttons{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button{
+  width: 240px;
+  height: 48px;
+  border-radius: 24px;
+  font-family: $OpenSans;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button__download{
+  background-color: #00bfa5;
+}
+
+.button__learn{
+  margin-top: 15px;
+  margin-bottom: 37px;
+  border: 2px solid #ffffff;
+}
