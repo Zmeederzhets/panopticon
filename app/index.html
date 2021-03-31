@@ -13,7 +13,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header contain">
     <div class="menu">
       <div class="logo">BREEZE</div>
       <nav class="nav">
@@ -40,76 +40,91 @@
 
 
   <main>
-    <div class="features">
+    <div class="features contain">
 
       <div class="block">
         <h2 class="title">Features</h2>
-        <p>We created for you the most ingenious and impeccable features:</p>
+        <p class="title__description">We created for you the most ingenious and impeccable features:</p>
       </div>
 
       <div class="block">
-        <input class="input" type="checkbox" name="features1" value="buy">
-        <h3 class="features__title">Payment system integration</h3>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="features" value="f1">
+          <span class="check__box"></span>
+          <h3 class="features__title">Payment system integration</h3>
+        </label>
         <p class="features__text">Integrated payment solutions are tools that your business can use to integrate accounting, customer relationship management (CRM) and other business applications with payments processing</p>
       </div>
 
 
 
       <div class="block">
-        <input type="checkbox" name="features2" value="buy">
-        <h3 class="features__title">Fraud Control System</h3>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="features" value="f2">
+          <span class="check__box"></span>
+          <h3 class="features__title">Fraud Control System</h3>
+        </label>
         <p class="features__text">Control fraud occurs when a trusted person in a high position of responsibility in a company, corporation, or state subverts the organization and engages in extensive fraud for personal gain.</p>
       </div>
 
       <div class="block">
-        <input type="checkbox" name="features3" value="buy">
-        <h3 class="features__title">Mobile Top-up</h3>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="features" value="f3">
+          <span class="check__box"></span>
+          <h3 class="features__title">Mobile Top-up</h3>
+        </label>
         <p class="features__text">Top-up is an additional or extra amount or payment that restores something to the level that is required.</p>
       </div>
 
       <div class="block">
-        <input type="checkbox" name="features4" value="buy">
-        <h3 class="features__title">Free calling and messaging</h3>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="features" value="f4">
+          <span class="check__box"></span>
+          <h3 class="features__title">Free calling and messaging</h3>
+        </label>
         <p class="features__text">This app lets you use your smartphone to make free calls and send free text and photo messages to other users, on any device, network and country.</p>
       </div>
 
       <div class="block">
-        <input type="checkbox" name="features5" value="buy">
-        <h3 class="features__title">HD Calls</h3>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="features" value="f5">
+          <span class="check__box"></span>
+          <h3 class="features__title">HD Calls</h3>
+        </label>
         <p class="features__text">Wideband audio, also known as HD voice, is high definition voice quality for telephony audio, contrasted with standard digital telephony. It extends the frequency range of audio signals transmitted over telephone lines.</p>
       </div>
 
     </div>
 
-
-    <video src="img/video.mp4" controls="" width="375px"></video>
-
-
-
-    <h2 class="title">Rates</h2>
-
-    <div class="country">
-
-      <img src="img/flag_usa.png">
-      <h3 class="flag">USA</h3>
-      <p class="speed">0.009/min</p>
-
-      <img src="img/flag_india.png">
-      <h3 class="flag">India</h3>
-      <p class="speed">0.012/min</p>
-
-      <img src="img/flag_china.png">
-      <h3 class="flag">China</h3>
-      <p class="speed">0.008/min</p>
-
-      <button class="button">View all</button>
-
+    <div class="media">
+      <video class="media__video" src="img/video.mp4" poster="img/video.png" controls=""></video>
     </div>
 
+    <div class="rates">
+      <h2 class="title">Rates</h2>
 
+      <div class="region">
+        <div class="country">
+          <div class="country__flag"><img src="img/flag_usa.png"></div>
+          <h3 class="country__name">USA</h3>
+          <p class="country__speed">0.009/min</p>
+        </div>
+        <div class="country">
+          <div class="country__flag"><img src="img/flag_india.png"></div>
+          <h3 class="country__name">India</h3>
+          <p class="country__speed">0.012/min</p>
+        </div>
+        <div class="country">
+          <div class="country__flag"><img src="img/flag_china.png"></div>
+          <h3 class="country__name">China</h3>
+          <p class="country__speed">0.008/min</p>
+        </div>
+      </div>
+        <button class="button button__rates">View all</button>
+      </div>
+
+    <div class="review contain">
     <h2 class="title">Customer Reviews</h2>
-
-    <div class="review">
       <h3 class="review__title">Excellent communication app.</h3>
       <p class="review__title">John Doe</p>
       <span class="review_star">
@@ -158,7 +173,6 @@
       <input type="text" name="email" placeholder="Email Address">
       <input type="text" name="subject" placeholder="Subject">
       <input type="text" name="message" placeholder="Message">
-
       <button class="button">SEND MESSAGE</button>
 
     </div>

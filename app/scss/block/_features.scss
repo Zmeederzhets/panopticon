@@ -6,11 +6,21 @@
 }
 
 .title{
+  padding-top: 60px;
+  padding-bottom: 24px;
   font-family: $OpenSans;
   font-size: 30px;
   line-height: 1.2;
   font-weight: 600;
   color: #585b60;
+}
+.title__description{
+  padding-bottom: 35px;
+  font-family: $OpenSans;
+  font-size: 18px;
+  line-height: 1.444em;
+  font-weight: 400;
+  color: #9da6ac;
 }
 
 .features__title{
@@ -24,15 +34,26 @@
 
 .features__text{
   padding-top: 17px;
+  padding-bottom: 35px;
   font-family: $OpenSans;
   font-size: 14px;
   line-height: 2em;
   font-weight: 400;
   color: #9da6ac;
 }
-.input{
-  padding-top: 36px;
+.check__input{
+  width: 0;
+  height: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+.check__input:checked + .check__box{
+  background-color: #00bfa5;
+}
+
+.check__box{
+  position: absolute;
   width: 10px;
   height: 10px;
-  border: 2px solid #00bfa5;
-}
+  border: 2px solid #00bfa5;}
