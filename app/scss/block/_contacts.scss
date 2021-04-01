@@ -1,0 +1,42 @@
+.contacts{
+  text-align: center;
+}
+
+.contacts__text{
+  padding-bottom: 28px;
+  font-family: $OpenSans;
+  font-size: 14px;
+  line-height: 1.714em;
+  font-weight: 400;
+  color: #9da6ac;
+}
+
+.contacts__input{
+  width: 345px;
+  height: 48px;
+  margin-top: 20px;
+  padding-left: 14px;
+  font-family: $OpenSans;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+  border-radius: 2px;
+}
+
+.contacts__input--message{
+  margin-bottom: 20px;
+  height: 200px;
+  align-items: flex-start;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+  border-radius: 2px;
+}
+
+.contacts__button{
+  width: 345px;
+  height: 48px;
+  background-color: #00bfa5;
+  border-radius: 2px;
+}

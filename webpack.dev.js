@@ -10,11 +10,13 @@ module.exports = {
     devServer: {
         port: 9000,
         host: '192.168.100.8',
+        /*host: 'localhost',*/
         contentBase: path.join(__dirname, './app/'),
         open: true,
         proxy: {
             '/api/**': {
                 target: '192.168.100.8:9000',
+                /*target: 'localhost:9000',*/
                 secure: false,
                 changeOrigin: true,
             }
