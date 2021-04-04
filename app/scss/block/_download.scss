@@ -1,20 +1,21 @@
 .download{
   text-align: center;
   background-color: #00bfa5;
+
+  &__title{
+    color: #ffffff;}
+
+  &__text{
+    padding-bottom: 45px;
+    font-family: $OpenSans;
+    font-size: 18px;
+    line-height: 1.444em;
+    font-weight: 400;
+    color: #ffffff;}
+
+  &__href{
+    padding-bottom: 84px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;}
 }
-.download__title{
-  color: #ffffff;}
-
-.download__text{
-  padding-bottom: 45px;
-  font-family: $OpenSans;
-  font-size: 18px;
-  line-height: 1.444em;
-  font-weight: 400;
-  color: #ffffff;}
-
-.download__href{
-  padding-bottom: 84px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 40px;}

@@ -1,42 +1,41 @@
 .review{
   text-align: center;
   background-color: #ffffff;
-}
 
-.review__title{
-  padding-top: 19px;
-  font-family: $OpenSans;
-  font-size: 18px;
-  line-height: 1.333em;
-  font-weight: 400;
-  color: #585b60;
-}
+  &__title{
+    padding-top: 19px;
+    font-family: $OpenSans;
+    font-size: 18px;
+    line-height: 1.333em;
+    font-weight: 400;
+    color: #585b60;
+  }
 
-.review__name{
-  padding-top: 13px;
-  padding-bottom: 11px;
-  font-family: $OpenSans;
-  font-size: 14px;
-  line-height: 1.286em;
-  font-weight: 700;
-  color: #585b60;
-}
+  &__name{
+    padding-top: 13px;
+    padding-bottom: 11px;
+    font-family: $OpenSans;
+    font-size: 14px;
+    line-height: 1.286em;
+    font-weight: 700;
+    color: #585b60;
+  }
 
-.review__text{
-  padding-right: 12px;
-  padding-left: 12px;
-  padding-top: 24px;
-  padding-bottom: 29px;
-  font-family: $OpenSans;
-  font-size: 14px;
-  line-height: 1.714em;
-  font-weight: 400;
-  color: #9da6ac;
-}
+  &__text{
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 24px;
+    padding-bottom: 29px;
+    font-family: $OpenSans;
+    font-size: 14px;
+    line-height: 1.714em;
+    font-weight: 400;
+    color: #9da6ac;
+  }
 
-.review__button{
-  padding-top: 21px;
-  padding-bottom: 68px;
-  color: #00bfa5;
-  text-transform: none;
-}
+  &__button{
+    margin-top: 21px;
+    margin-bottom: 68px;
+    color: #00bfa5;
+    text-transform: none;
+  }}

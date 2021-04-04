@@ -2,19 +2,19 @@
   padding-top: 32px;
   padding-bottom: 60px;
   text-align: center;
-}
 
-.footer__title{
-  padding-bottom: 28px;
-  font-family: $OpenSans;
-  font-size: 18px;
-  line-height: 1.333em;
-  font-weight: 400;
-  color: #9da6ac;
-}
-.footer__href{
-  padding-left: 40px;
-  padding-right: 40px;
-  display: flex;
-  justify-content: space-around;
+  &__title{
+    padding-bottom: 28px;
+    font-family: $OpenSans;
+    font-size: 18px;
+    line-height: 1.333em;
+    font-weight: 400;
+    color: #9da6ac;
+  }
+  &__href{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
 }

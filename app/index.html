@@ -15,7 +15,7 @@
 
   <header class="header contain">
     <div class="menu">
-      <div class="logo">BREEZE</div>
+      <a class="logo" href="">BREEZE</a>
       <nav class="nav">
         <a class="nav__item" href="">Home</a>
         <a class="nav__item" href="">Features</a>
@@ -167,19 +167,16 @@
       </div>
     </div>
 
-
-    <div class="contacts contain">
-
-      <h2 class="title">Get in touch</h2>
-      <p class="contacts__text">Have feedback, suggestion, or any thought about our app? Feel free to contact us anytime, we will get back to you in 24 hours.</p>
-      <input class="contacts__input" type="text" name="name" placeholder="Your Name">
-      <input class="contacts__input" type="text" name="email" placeholder="Email Address">
-      <input class="contacts__input" type="text" name="subject" placeholder="Subject">
-      <input class="contacts__input contacts__input--message" type="text" name="message" placeholder="Message">
-      <button class="contacts__button button">SEND MESSAGE</button>
+    <div class="contacts contain" tabindex="1">
+        <h2 class="title">Get in touch</h2>
+        <p class="contacts__text">Have feedback, suggestion, or any thought about our app? Feel free to contact us anytime, we will get back to you in 24 hours.</p>
+      <form action="" id="feedback"><input class="contacts__input" type="text" name="name" placeholder="Your Name">
+          <input class="contacts__input" type="email" name="email" placeholder="Email Address">
+          <input class="contacts__input" type="text" name="subject" placeholder="Subject">
+          <textarea class="contacts__input contacts__input--message" type="text" name="message" placeholder="Message"></textarea>
+      </form>
+      <button class="contacts__button button" type="reset" form="feedback"  >SEND MESSAGE</button>
     </div>
-
-    
   </main>
 
   <footer class="footer contain">

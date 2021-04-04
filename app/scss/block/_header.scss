@@ -17,6 +17,7 @@
 }
 
 .logo{
+  text-decoration: none;
   font-family: $OpenSans;
   font-size: 24px;
   line-height: 1.2em;
@@ -31,17 +32,15 @@
   width: 32px;
   display: block;
   background: url("/img/menu.svg") no-repeat;
-}
-
-.nav__item{
+&__item{
   display: none;
-}
+}}
 
 .caption{
   text-align: center;
-}
 
-.caption__title{
+
+  &__title{
   max-width: 270px;
   margin: auto;
   padding-top: 252px;
@@ -53,7 +52,7 @@
   color: #ffffff;
 }
 
-.caption__slogan{
+  &__slogan{
   padding-top: 18px;
   padding-left: 15px;
   padding-right: 15px;
@@ -62,6 +61,7 @@
   line-height: 1.625em;
   font-weight: 400;
   color: #ffffff;
+}
 }
 
 .buttons{
@@ -81,14 +81,16 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-}
 
-.button__download{
+  &:hover{
+    border: 2px solid #9da6ac;  /* поменять эту ерись*/
+  }
+  &__download{
   background-color: #00bfa5;
 }
 
-.button__learn{
+  &__learn{
   margin-top: 15px;
   margin-bottom: 37px;
   border: 2px solid #ffffff;
-}
+}}
