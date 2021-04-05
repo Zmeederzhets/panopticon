@@ -1,19 +1,28 @@
 .header {
   width: 100%;
-  margin: auto;
+  margin:0 auto;
   position: relative;
   background:  url("/img/header.png") no-repeat ;
   background-size: cover;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.5) ;
+
+  @media (min-width: 357px){
+    background:  url("/img/header--big.png") no-repeat ;
+  }
 }
 
 .menu{
+  margin: auto;
   padding-top: 35px;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 357px){
+    max-width: 1170px;
+  }
 }
 
 .logo{
@@ -32,13 +41,34 @@
   width: 32px;
   display: block;
   background: url("/img/menu.svg") no-repeat;
+
+  @media (min-width: 357px){
+    background: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
 &__item{
+  text-decoration: none;
   display: none;
-}}
+
+  @media (min-width: 357px){
+    display: block;
+    padding-left: 30px;
+    font-family: $OpenSans;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color:#979294;
+  }
+}
+}
 
 .caption{
   text-align: center;
-
 
   &__title{
   max-width: 270px;
@@ -50,6 +80,12 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+
+    @media (min-width: 357px){
+      max-width: 1170px;
+      font-size: 48px;
+      line-height: 1.25em;
+          }
 }
 
   &__slogan{
@@ -61,6 +97,12 @@
   line-height: 1.625em;
   font-weight: 400;
   color: #ffffff;
+    @media (min-width: 357px){
+      margin: auto;
+      max-width: 1170px;
+      font-size: 22px;
+      line-height: 1.455em;
+    }
 }
 }
 
@@ -81,10 +123,16 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+  transition-duration: 0.4s;
 
   &:hover{
-    border: 2px solid #9da6ac;  /* поменять эту ерись*/
+    background-color: #9da6ac;
+    color: #464646;
   }
+  &:active {
+    transform: translateY(6px);
+  }
+
   &__download{
   background-color: #00bfa5;
 }

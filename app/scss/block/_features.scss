@@ -17,6 +17,7 @@
     }
 
 
+
   }
   &__text{
     padding-top: 17px;
@@ -41,6 +42,9 @@
 &:checked + .check__box{
   background-color: #00bfa5;
 }
+  &:active + .check__box{
+    transform: translateY(3px);
+  }
 }
 .check__box{
   position: absolute;
@@ -65,3 +69,7 @@
     font-weight: 400;
     color: #9da6ac;
   }}
+
+.nav__item--actual{
+  color: #ffffff;
+}

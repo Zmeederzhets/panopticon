@@ -34,5 +34,10 @@ button {
   padding-bottom: 0;
 }
 
+@media (min-width: 357px) {
+  .contain {
+    max-width: 100%;
+  }
+}
 
 
