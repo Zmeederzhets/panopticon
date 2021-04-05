@@ -9,6 +9,9 @@
 
   @media (min-width: 357px){
     background:  url("/img/header--big.png") no-repeat ;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5) ;
   }
 }
 
@@ -36,7 +39,6 @@
   color: #ffffff;
 }
 
-
 .nav{
   width: 32px;
   display: block;
@@ -49,61 +51,66 @@
     align-items: center;
   }
 
-&__item{
-  text-decoration: none;
-  display: none;
+  &__item{
+    text-decoration: none;
+    display: none;
 
-  @media (min-width: 357px){
-    display: block;
-    padding-left: 30px;
-    font-family: $OpenSans;
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color:#979294;
+    @media (min-width: 357px){
+      display: block;
+      padding-left: 30px;
+      font-family: $OpenSans;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color:#979294;
+    }
   }
-}
+
+  &__item--actual{
+    color: #ffffff;
+  }
 }
 
 .caption{
   text-align: center;
 
   &__title{
-  max-width: 270px;
-  margin: auto;
-  padding-top: 252px;
-  font-family: $OpenSans;
-  font-size: 36px;
-  line-height: 1.333em;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
+    max-width: 270px;
+    margin: auto;
+    padding-top: 252px;
+    font-family: $OpenSans;
+    font-size: 36px;
+    line-height: 1.333em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
 
     @media (min-width: 357px){
       max-width: 1170px;
       font-size: 48px;
       line-height: 1.25em;
-          }
-}
+    }
+  }
 
   &__slogan{
-  padding-top: 18px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-family: $OpenSans;
-  font-size: 16px;
-  line-height: 1.625em;
-  font-weight: 400;
-  color: #ffffff;
+    padding-top: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: $OpenSans;
+    font-size: 16px;
+    line-height: 1.625em;
+    font-weight: 400;
+    color: #ffffff;
+
     @media (min-width: 357px){
       margin: auto;
       max-width: 1170px;
       font-size: 22px;
       line-height: 1.455em;
     }
-}
+  }
 }
 
 .buttons{
@@ -134,11 +141,13 @@
   }
 
   &__download{
-  background-color: #00bfa5;
-}
+    background-color: #00bfa5;
+  }
 
   &__learn{
-  margin-top: 15px;
-  margin-bottom: 37px;
-  border: 2px solid #ffffff;
-}}
+    margin-top: 15px;
+    margin-bottom: 37px;
+    border: 2px solid #ffffff;
+  }
+}
+
