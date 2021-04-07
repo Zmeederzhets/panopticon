@@ -27,14 +27,14 @@ button {
 }
 
 .contain {
-  max-width: 375px;
+  max-width: 376px;
   margin: auto;
   padding-left:15px;
   padding-right: 15px;
   padding-bottom: 0;
 }
 
-@media (min-width: 357px) {
+@media (min-width: 376px) {
   .contain {
     max-width: 100%;
   }

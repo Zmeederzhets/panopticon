@@ -12,9 +12,14 @@
     color: #9da6ac;
   }
   &__href{
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    justify-content: space-around;
+    padding-left: 50%;
+    margin-left: -128px;
+    display: grid;
+    grid-template-columns:  64px 64px 64px  64px;
+
+    @media (min-width: 376px) {
+      margin-left: -88px;
+      grid-template-columns:  44px 44px 44px  44px;
+    }
   }
 }
