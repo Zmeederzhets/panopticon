@@ -3,7 +3,12 @@
   background-color: #00bfa5;
 
   &__title{
-    color: #ffffff;}
+    color: #ffffff;
+
+    @media (min-width: 376px){
+      padding-top: 120px;
+    }
+  }
 
   &__text{
     padding-bottom: 45px;
@@ -11,11 +16,24 @@
     font-size: 18px;
     line-height: 1.444em;
     font-weight: 400;
-    color: #ffffff;}
+    color: #ffffff;
+    @media (min-width: 376px){
+      padding-bottom: 66px;
+      font-size: 22px;
+      line-height: 1.444em;
+    }
+  }
 
   &__href{
     padding-bottom: 84px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 40px;}
+    grid-row-gap: 40px;
+    @media (min-width: 376px){
+      padding-bottom: 108px;
+      justify-content: center;
+      grid-template-columns: max(196px) max(196px);
+      grid-column-gap: 30px;
+    }
+  }
 }

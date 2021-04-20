@@ -1,17 +1,29 @@
 .contacts{
-  text-align: center;
-}
 
-.contacts__text{
+  text-align: center;
+  background-color: #edf2f5;
+
+
+  &__contain{
+  @media (min-width: 376px){
+  max-width: 555px;
+  margin: 0 auto;
+  }
+}
+  &__text{
   padding-bottom: 28px;
   font-family: $OpenSans;
   font-size: 14px;
   line-height: 1.714em;
   font-weight: 400;
   color: #9da6ac;
+  @media (min-width: 376px){
+    font-size: 18px;
+    line-height: 1.333em;
+  }
 }
 
-.contacts__input{
+  &__input{
   width: 100%;
   height: 48px;
   margin-top: 20px;
@@ -26,7 +38,7 @@
   border: none;
 }
 
-.contacts__input--message{
+  &__input--message{
   padding-top: 14px;
   margin-bottom: 20px;
   height: 200px;
@@ -36,9 +48,11 @@
   border: none;
 }
 
-.contacts__button{
+  &__button{
+  margin-bottom: 10px;
   width: 100%;
   height: 48px;
   background-color: #00bfa5;
  border-radius: 2px;
+}
 }
