@@ -53,7 +53,7 @@
     <div class="features contain">
 
       <div class="block">
-        <h2 class="title">Features</h2>
+        <h2 class="title title__features">Features</h2>
         <p class="title__description">We created for you the most ingenious and impeccable features:</p>
       </div>
 
@@ -65,7 +65,6 @@
         </label>
         <p class="features__text">Integrated payment solutions are tools that your business can use to integrate accounting, customer relationship management (CRM) and other business applications with payments processing</p>
       </div>
-
 
       <div class="block">
         <label class="check">
@@ -103,10 +102,16 @@
         <p class="features__text">Wideband audio, also known as HD voice, is high definition voice quality for telephony audio, contrasted with standard digital telephony. It extends the frequency range of audio signals transmitted over telephone lines.</p>
       </div>
 
+      <div class="features__img"></div>
+
+
+
     </div>
 
     <div class="media">
-      <video class="media__video" src="img/video.mp4" poster="img/video.png" controls=""></video>
+      <div class="video">
+        <video class="video__content" src="img/video.mp4" poster="img/video.png" controls=""></video>
+      </div>
     </div>
 
     <div class="rates">
@@ -134,6 +139,10 @@
 
     <div class="review contain">
     <h2 class="title">Customer Reviews</h2>
+
+
+      <div class="review__contain">
+      <div>
       <h3 class="review__title">Excellent communication app.</h3>
       <p class="review__name">John Doe</p>
       <span class="review_star">
@@ -144,29 +153,43 @@
         <img src="img/star_gray.png" alt="">
       </span>
       <p class="review__text">I've used WhatsApp for over a year. It's excellent, whether communicating securely one-on-one with a business partner, keeping up with a small group, sharing photos with friends.</p>
-
-      <h3 class="review__title">the BEST Calling App</h3>
-      <p class="review__name">John Smith</p>
-      <span class="review_star">
+      </div>
+      <div>
+        <h3 class="review__title">the BEST Calling App</h3>
+        <p class="review__name">John Smith</p>
+        <span class="review_star">
         <img src="img/star.png" alt="">
         <img src="img/star.png" alt="">
         <img src="img/star.png" alt="">
         <img src="img/star.png" alt="">
         <img src="img/star.png" alt="">
       </span>
-      <p class="review__text">I've used this app for a while, and this one has clearer calls and isn't clunky. It's pretty smooth and I really like the interface. It does have a slight battery drain issue. Anyway, great app!<br>Thanks guys.</p>
+        <p class="review__text">I've used this app for a while, and this one has clearer calls and isn't clunky. It's pretty smooth and I really like the interface. It does have a slight battery drain issue. Anyway, great app!<br>Thanks guys.</p>
 
-      <h3 class="review__title">So far so good</h3>
-      <p class="review__name">John Doe</p>
-      <span class="review_star">
+      </div>
+      <div>
+        <h3 class="review__title">So far so good</h3>
+        <p class="review__name">John Doe</p>
+        <span class="review_star">
         <img src="img/star.png" alt="">
         <img src="img/star.png" alt="">
         <img src="img/star.png" alt="">
         <img src="img/star.png" alt="">
         <img src="img/star.png" alt="">
       </span>
-      <p class="review__text">Having tried just about every calling App. out there I feel that I'm qualified to say that this is one of the very best you can choose!!! Apart from the adds it's been a really great service to use.</p>
+        <p class="review__text">Having tried just about every calling App. out there I feel that I'm qualified to say that this is one of the very best you can choose!!! Apart from the adds it's been a really great service to use.</p>
+      </div>
+    </div>
+
+
       <button class="review__button button">View more reviews</button>
+      <div class="button__radio button__radio--review">
+        <input class="button__radio--color" type="radio" name="img" value="1">
+        <input class="button__radio--color" type="radio" name="img" value="2" checked>
+        <input class="button__radio--color" type="radio" name="img" value="3">
+      </div>
+
+
     </div>
 
     <div class="download contain">

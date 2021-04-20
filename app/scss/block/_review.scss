@@ -2,6 +2,17 @@
   text-align: center;
   background-color: #ffffff;
 
+
+  &__contain{@media (min-width: 376px) {
+    max-width: 1140px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  }
+
   &__title{
     padding-top: 19px;
     font-family: $OpenSans;
@@ -38,5 +49,14 @@
     margin-bottom: 68px;
     color: #00bfa5;
     text-transform: none;
+
+    @media (min-width: 376px){
+    display: none;
+        }
   }
+}
+
+.button__radio--review{
+  padding-top: 80px;
+  padding-bottom: 40px;
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #e5eaed;
+  background: #fff;
   color: #464646;
   font-family: $OpenSans;
   font-size: 14px;
@@ -32,12 +32,11 @@ button {
   padding-left:15px;
   padding-right: 15px;
   padding-bottom: 0;
-}
+
 
 @media (min-width: 376px) {
-  .contain {
     max-width: 100%;
+  margin: 0 auto;
   }
 }
-
 

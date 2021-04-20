@@ -1,24 +1,19 @@
 .media{
-  display: block;
-  max-width: 375px;
-  margin:0 auto;
   background-color: #e5eaed ;
+}
 
-  &__video{
-    margin:0 auto;
-    width: 100%;
-    object-fit: cover;
-
-    @media (min-width: 376px){
-      max-width: 1140px;
-    }
-
-  }
+.video {
+  margin: 0 auto;
+  max-width: 1140px;
 
   @media (min-width: 376px){
-    max-width: 1140px;
     padding-top: 80px;
     padding-bottom: 80px;
   }
 
+  &__content{
+    width: 100%;
+    object-fit: cover;
+  }
 }
+
