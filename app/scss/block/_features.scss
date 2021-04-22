@@ -4,8 +4,8 @@
   background-color: #ffffff;
   text-align: center;
 
-  @media (min-width: 376px){
-    padding: 80px 0 80px;
+  @media (min-width: 1070px){
+    padding: 80px 15px 80px;
     max-width: 1170px;
     text-align: start;
     margin:0 auto;
@@ -14,7 +14,7 @@
 
   &__img{
     display: none;
-    @media (min-width: 376px){
+    @media (min-width: 1070px){
       margin-left: 40px;
       display: block;
       grid-column: 2/3;
@@ -31,7 +31,7 @@
     font-weight: 400;
     color: #585b60;
 
-    @media (min-width: 376px){
+    @media (min-width: 1070px){
       position: relative;
       padding: 0 0 0 41px;
       line-height: 1.33em;
@@ -50,7 +50,7 @@
     line-height: 2em;
     font-weight: 400;
     color: #9da6ac;
-    @media (min-width: 376px){
+    @media (min-width: 1070px){
       padding-top: 13px;
       padding-left: 41px;
       padding-bottom: 28px;
@@ -80,7 +80,7 @@
   height: 10px;
   border: 2px solid #00bfa5;
 
-  @media (min-width: 376px){
+  @media (min-width: 1070px){
     margin-top: 20px;
     width: 20px;
     height: 20px;
@@ -96,7 +96,7 @@
   line-height: 1.2;
   font-weight: 600;
   color: #585b60;
-    @media (min-width: 376px){
+    @media (min-width: 1070px){
       padding-top: 80px;
       padding-bottom: 36px;
       font-size: 40px;
@@ -104,7 +104,7 @@
       font-weight: 600;
   }
   &__features{
-    @media (min-width: 376px){
+    @media (min-width: 1070px){
       padding-top: 40px;
     }
   }
@@ -116,7 +116,7 @@
     line-height: 1.444em;
     font-weight: 400;
     color: #9da6ac;
-    @media (min-width: 376px) {
+    @media (min-width: 1070px) {
       padding-bottom: 70px;
       max-width: 450px;
       font-size: 22px;

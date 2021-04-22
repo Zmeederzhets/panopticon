@@ -1,58 +1,57 @@
-.contacts{
-
+.contacts {
   text-align: center;
   background-color: #edf2f5;
 
-
-  &__contain{
-  @media (min-width: 376px){
-  max-width: 555px;
-  margin: 0 auto;
+  &__contain {
+    @media (min-width: 376px) {
+      max-width: 555px;
+      margin: 0 auto;
+    }
   }
-}
-  &__text{
-  padding-bottom: 28px;
-  font-family: $OpenSans;
-  font-size: 14px;
-  line-height: 1.714em;
-  font-weight: 400;
-  color: #9da6ac;
-  @media (min-width: 376px){
-    font-size: 18px;
-    line-height: 1.333em;
+
+  &__text {
+    padding-bottom: 28px;
+    font-family: $OpenSans;
+    font-size: 14px;
+    line-height: 1.714em;
+    font-weight: 400;
+    color: #9da6ac;
+    @media (min-width: 376px) {
+      font-size: 18px;
+      line-height: 1.333em;
+    }
   }
-}
 
-  &__input{
-  width: 100%;
-  height: 48px;
-  margin-top: 20px;
-  padding-left: 14px;
-  font-family: $OpenSans;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 400;
-  background-color: #ffffff;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
-  border-radius: 2px;
-  border: none;
-}
+  &__input {
+    width: 100%;
+    height: 48px;
+    margin-top: 20px;
+    padding-left: 14px;
+    font-family: $OpenSans;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    border: none;
+  }
 
-  &__input--message{
-  padding-top: 14px;
-  margin-bottom: 20px;
-  height: 200px;
-  background-color: #ffffff;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
-  border-radius: 2px;
-  border: none;
-}
+  &__input--message {
+    padding-top: 14px;
+    margin-bottom: 20px;
+    height: 200px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    border: none;
+  }
 
-  &__button{
-  margin-bottom: 10px;
-  width: 100%;
-  height: 48px;
-  background-color: #00bfa5;
- border-radius: 2px;
-}
+  &__button {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 48px;
+    background-color: #00bfa5;
+    border-radius: 2px;
+  }
 }

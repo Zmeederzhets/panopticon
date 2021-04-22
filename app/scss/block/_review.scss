@@ -1,62 +1,66 @@
-.review{
-  text-align: center;
-  background-color: #ffffff;
+.review {
+   text-align: center;
+   background-color: #ffffff;
 
+   &__contain {
+     @media (min-width: 800px) {
+       max-width: 1140px;
+       margin: 0 auto;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-column-gap: 30px;
+     }
 
-  &__contain{@media (min-width: 376px) {
-    max-width: 1140px;
-    margin:0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 30px;
-  }
+   }
 
-  }
+   &__title {
+     padding-top: 19px;
+     font-family: $OpenSans;
+     font-size: 18px;
+     line-height: 1.333em;
+     font-weight: 400;
+     color: #585b60;
+   }
 
-  &__title{
-    padding-top: 19px;
-    font-family: $OpenSans;
-    font-size: 18px;
-    line-height: 1.333em;
-    font-weight: 400;
-    color: #585b60;
-  }
+   &__name {
+     padding-top: 13px;
+     padding-bottom: 11px;
+     font-family: $OpenSans;
+     font-size: 14px;
+     line-height: 1.286em;
+     font-weight: 700;
+     color: #585b60;
+   }
 
-  &__name{
-    padding-top: 13px;
-    padding-bottom: 11px;
-    font-family: $OpenSans;
-    font-size: 14px;
-    line-height: 1.286em;
-    font-weight: 700;
-    color: #585b60;
-  }
+   &__text {
+     padding-right: 12px;
+     padding-left: 12px;
+     padding-top: 24px;
+     padding-bottom: 29px;
+     font-family: $OpenSans;
+     font-size: 14px;
+     line-height: 1.714em;
+     font-weight: 400;
+     color: #9da6ac;
+   }
 
-  &__text{
-    padding-right: 12px;
-    padding-left: 12px;
-    padding-top: 24px;
-    padding-bottom: 29px;
-    font-family: $OpenSans;
-    font-size: 14px;
-    line-height: 1.714em;
-    font-weight: 400;
-    color: #9da6ac;
-  }
+   &__button {
+     margin-top: 21px;
+     margin-bottom: 68px;
+     color: #00bfa5;
+     text-transform: none;
 
-  &__button{
-    margin-top: 21px;
-    margin-bottom: 68px;
-    color: #00bfa5;
-    text-transform: none;
+     @media (min-width: 800px) {
+       display: none;
+     }
+   }
+ }
 
-    @media (min-width: 376px){
-    display: none;
-        }
-  }
-}
-
-.button__radio--review{
+.button__radio--review {
   padding-top: 80px;
   padding-bottom: 40px;
+
+  @media (max-width: 799px) {
+    display: none;
+  }
 }

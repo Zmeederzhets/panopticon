@@ -1,35 +1,35 @@
-.rates{
+.rates {
   text-align: center;
   background-color: #edf2f5;
 }
 
-.region{
+.region {
   max-width: 375px;
   margin: auto;
-  padding-left:7px;
+  padding-left: 7px;
   padding-right: 7px;
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 30px;
 
-  @media (min-width: 800px){
+  @media (min-width: 800px) {
     max-width: 1140px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
   }
 }
 
-.country{
+.country {
   width: 100%;
   background-color: #ffffff;
-  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
 
-  &__flag{
+  &__flag {
     padding-top: 80px;
   }
 
-  &__name{
+  &__name {
     padding-top: 40px;
     font-family: $OpenSans;
     font-size: 24px;
@@ -39,7 +39,7 @@
     color: #585b60;
   }
 
-  &__speed{
+  &__speed {
     padding-top: 21px;
     padding-bottom: 104px;
     font-family: $OpenSans;
@@ -50,12 +50,12 @@
   }
 }
 
-.button__rates{
+.button__rates {
   margin-top: 40px;
   margin-bottom: 60px;
   background-color: #00bfa5;
 
-  @media (min-width: 800px){
+  @media (min-width: 800px) {
     margin-top: 60px;
     margin-bottom: 80px;
   }

@@ -1,17 +1,22 @@
-.media{
-  background-color: #e5eaed ;
+.media {
+  background-color: #e5eaed;
 }
 
 .video {
   margin: 0 auto;
   max-width: 1140px;
 
-  @media (min-width: 376px){
+  @media (min-width: 376px) {
     padding-top: 80px;
     padding-bottom: 80px;
+
+    @media (max-width: 1170px) {
+      padding-top: calc(10px + 70 * ((100vw - 375px) / (1170 - 376)));
+      padding-bottom: calc(10px + 70 * ((100vw - 375px) / (1170 - 376)));
+    }
   }
 
-  &__content{
+  &__content {
     width: 100%;
     object-fit: cover;
   }
